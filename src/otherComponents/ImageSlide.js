@@ -14,11 +14,12 @@ const ImageSlide = () => {
   };
     return (
         <>
-        <div className="image_div">
-        <Carousel activeIndex={index} onSelect={handleSelect}>
-      <Carousel.Item>
+        <div className="image_div"  >
+        <Carousel  activeIndex={index} onSelect={handleSelect}>
+      <Carousel.Item style={{"marginTop":"86px"}}>
         <img
           className="d-block w-100"
+         style={{"marginTop":"2px","height":"31rem"}}
           src={img1}
           alt="First slide"
         />
@@ -30,6 +31,7 @@ const ImageSlide = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
+          style={{"height":"35.4rem"}}
           src={img2}
           alt="Second slide"
         />
@@ -42,6 +44,7 @@ const ImageSlide = () => {
       <Carousel.Item>
         <img
           className="d-block w-100"
+          style={{"height":"35.4rem"}}
           src={img3}
           alt="Third slide"
         />

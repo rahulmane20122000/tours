@@ -14,6 +14,7 @@ import Bookingcard from './Bookingcard';
 const Bookingprocess=()=>{
     return(
         <>
+        <div className="main_booking">
         <div className="booking">
         <h1  >Booking Process</h1>
         <div className="cards_data">
@@ -27,6 +28,7 @@ const Bookingprocess=()=>{
            <Bookingcard icon="fas fa-globe-americas"  Text="Travel"/>
            </div>
            </div>
+        </div>
         </div>
         </>
     );

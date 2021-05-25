@@ -8,6 +8,149 @@
     
 }
 
+body {
+    font-size: 10px; /* this will make em cross-behave */
+    
+}
+
+.react-calendar {
+    transform: translateX(-5%);
+    width: 350px;
+    max-width: 100%;
+    background: white;
+    border: 1px solid #a0a096;
+    
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.125em;
+  }
+  .react-calendar--doubleView {
+    width: 700px;
+  }
+  .react-calendar--doubleView .react-calendar__viewContainer {
+    display: flex;
+    margin: -0.5em;
+  }
+  .react-calendar--doubleView .react-calendar__viewContainer > * {
+    width: 50%;
+    margin: 0.5em;
+  }
+  .react-calendar,
+  .react-calendar *,
+  .react-calendar *:before,
+  .react-calendar *:after {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  .react-calendar button {
+    margin: 0;
+    border: 0;
+    outline: none;
+  }
+  .react-calendar button:enabled:hover {
+    cursor: pointer;
+  }
+  .react-calendar__navigation {
+    height: 44px;
+    margin-bottom: 1em;
+  }
+  .react-calendar__navigation button {
+    min-width: 44px;
+    background: none;
+  }
+  .react-calendar__navigation button:enabled:hover,
+  .react-calendar__navigation button:enabled:focus {
+    background-color: #e6e6e6;
+  }
+  .react-calendar__navigation button[disabled] {
+    background-color: #f0f0f0;
+  }
+  .react-calendar__month-view__weekdays {
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: bold;
+    font-size: 0.75em;
+  }
+  .react-calendar__month-view__weekdays__weekday {
+    padding: 0.5em;
+  }
+  .react-calendar__month-view__weekNumbers {
+    font-weight: bold;
+  }
+  .react-calendar__month-view__weekNumbers .react-calendar__tile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 0.75em;
+    padding: calc(0.75em / 0.75) calc(0.5em / 0.75);
+  }
+  .react-calendar__month-view__days__day--weekend {
+    color: #d10000;
+  }
+  .react-calendar__month-view__days__day--neighboringMonth {
+    color: #757575;
+  }
+  .react-calendar__year-view .react-calendar__tile,
+  .react-calendar__decade-view .react-calendar__tile,
+  .react-calendar__century-view .react-calendar__tile {
+    padding: 2em 0.5em;
+  }
+  .react-calendar__tile {
+    max-width: 100%;
+    text-align: center;
+    padding: 0.75em 0.5em;
+    background: none;
+  }
+  .react-calendar__tile:disabled {
+    background-color: #f0f0f0;
+  }
+  .react-calendar__tile:enabled:hover,
+  .react-calendar__tile:enabled:focus {
+    background-color: #e6e6e6;
+  }
+  .react-calendar__tile--now {
+    background: #ffff76;
+  }
+  .react-calendar__tile--now:enabled:hover,
+  .react-calendar__tile--now:enabled:focus {
+    background: #ffffa9;
+  }
+  .react-calendar__tile--hasActive {
+    background: #76baff;
+  }
+  .react-calendar__tile--hasActive:enabled:hover,
+  .react-calendar__tile--hasActive:enabled:focus {
+    background: #a9d4ff;
+  }
+  .react-calendar__tile--active {
+    background: #006edc;
+    color: white;
+  }
+  .react-calendar__tile--active:enabled:hover,
+  .react-calendar__tile--active:enabled:focus {
+    background: #1087ff;
+  }
+  .react-calendar--selectRange .react-calendar__tile--hover {
+    background-color: #e6e6e6;
+  }
+  
+
+
+/* ::-webkit-scrollbar {
+    width: 5px;
+}
+ 
+::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.3); 
+    border-radius: 10px;
+}
+ 
+::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    -webkit-box-shadow: inset 0 0 2px rgba(0,0,0,0.5); 
+} */
+
+
 /* .heading{
     font-family: 'Shadows Into Light', cursive;
     color:#072F5F;
@@ -16,19 +159,22 @@
 .App{
     width:100vw;
     height: 100vh;
+    overflow-x: scroll;
+    
     
 }
 
-::-webkit-scrollbar{
-    display:none;
-}
+/* ::-webkit-scrollbar{
+   z-index: 1;
+} */
 
 .image_div img{
     width:100%;
-    height:60vh;
+    height: 30rem;
+    margin-top:20px;
 }
 
-.image_text{
+ .image_text{
     font-family: 'Rock Salt', cursive;
     text-align: center;
     position:relative;
@@ -36,7 +182,7 @@
     left:-2.5rem;
     color:white;
     font-size: 4.5rem;
-}
+} 
 
 .menu_active{
     border-bottom: 2px solid white;
@@ -52,10 +198,25 @@
 
 
 
+
 .booking_card .icon_div{
     font-size: 3rem;
     text-align: center;
     color:white;
+}
+
+.main_indian_tours{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-20%);
+}
+
+.indian_tours{
+    
+    margin-top:100px ;
+   
 }
 
 .browse,
@@ -70,12 +231,59 @@
     padding:2rem;
     background-color: #228c22;
     border-radius: 30px;
-    box-shadow: 5px 5px 15px -5px rgba(0,0.5,0,0.3);
+    box-shadow: 5px 5px 25px -5px rgba(0,0.5,0,0.3);
 
 }
+.cards_info a{
+    color:#228c22;
+    width:100%;
+    
+ }
 
-.booking{
+ .cards_info a:hover{
+     color:white;
+ }
+.booking {
     padding:4.5rem 0 4.5rem 0 ;
+    
+    width:100rem;
+    height: 40rem;
+    background-color: white;
+    border-radius: 15px;
+    /* box-shadow: 5px 5px 35px -5px rgba(0,0,0,0.3); */
+}
+.veena{
+    padding:4.5rem 0 0 0 ;
+    
+}
+
+
+.wrap_veena{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+ 
+  
+}
+.main_booking{
+    margin-top: 40px;
+    display:flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
+    padding: 20px;
+}
+
+.pit{
+    padding:2.5rem 0 2.5rem 0 ; 
+}
+.pit h1{
+    text-align: center;
+    font-size: 4.5rem;
+    color:#546854;
+    font-weight: 500;
+    margin-top: 1.5rem;
 }
 
 .booking h1{
@@ -86,11 +294,28 @@
     margin-top: 1.5rem;
 }
 
+.veena h1{
+    text-align: center;
+    font-size: 4.5rem;
+    color:#228c22;
+    font-weight: 500;
+    margin-top: 0.5rem;
+   
+    margin-bottom: 2.5rem;
+}
+.heading_title{
+    text-align: center;
+    margin-top: 8rem;
+    font-size: 5rem;
+    font-weight: 600;
+    color:#228c22;
+}
+
 .main_footer{
   width:100vw;
   height:fit-content;
   background-color:#228c22;
-  margin-top: 12.5rem;
+  margin-top: 20rem;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
@@ -128,6 +353,22 @@
     font-size: 1rem;
 }
 
+.phone,.mail,.main_add{
+    display: flex;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.phone i{
+    margin-right: 10px;
+}
+.mail i{
+    margin-right: 10px;
+}
+.main_add i{
+    margin-right: 10px;
+    font-size: 1.2rem;
+}
 .social_div h3{
     font-weight: bold;
 }
@@ -141,7 +382,7 @@
  width:max-content;
  height:fit-content;
  box-shadow: 5px 5px 35px -5px rgba(0,0,0,0.3);
- border-radius: 20px;
+ border-radius: 10px;
  display:flex;
  flex-direction: row;
  justify-content: center;
@@ -153,19 +394,28 @@
 .sign_in{
     display: flex;
     flex-direction: column;
+    
 }
 
 .main_register{
     display:flex;
     justify-content: center;
     align-items: center;
-    transform: translateY(10%);
+    transform: translateY(20%);
+    
+}
+.main_register1{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    transform: translateY(20%);
     
 }
 
 .sign_in h2{
     font-weight: bold;
     margin-bottom: 1.5rem;
+    font-size: 2.2rem;
 }
 
 .sign_in input{
@@ -176,20 +426,24 @@
     text-indent: 10px;
     font-weight: 600;
     text-transform:none ;
-    
+    height: 50px;
+    width: 200px;
 }
 
 .sign_in Button{
     background-color: #228C22;
     color:white;
     font-weight: bold;
-    margin:20px;
+    margin-top:20px;
     letter-spacing: 3px;
+    width: 6.5rem;
 }
 
 .sign_in Button:hover{
     background-color: #228c22;
 }
+
+
 
 .cards_info img{
     width:20rem;
@@ -198,12 +452,10 @@
 }
 
 .row{
-    display:flex;
-    flex-direction:row;
-    overflow-y: hidden;
-    overflow-x: scroll;
-    justify-content: center;
-    align-items: center;
+ display: flex;
+ flex-direction: row;
+ justify-content: center;
+ align-items: center;
     
 }
 
@@ -213,7 +465,7 @@
     
     border-radius: 20px;
     box-shadow: 5px 5px 20px -5px rgba(0,0,0,0.3);
-    margin: 20px;
+    margin: 30px;
 }
 
 .cards_info{
@@ -236,20 +488,678 @@
     color:#228C22;
     font-size: 1rem;
     font-weight: 600;
-    
+    height: 35px;
+    width: 100%;
 }
+
+
 .cards_info Button:hover{
     background-color: #228C22;
     color:white;
 }
 
-.row_poster{
+.row_poster1{
+    display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 5px;
+   
+}
+.btn_tour{
     display:flex;
-    flex-direction: row;
-    overflow-x: scroll;
+    justify-content: space-evenly;
+   
+    /* margin-right:20px; */
+}
+
+
+.main_folder{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+   transform: translateY(3%);
+    
+    
+    padding: 50px;
+}
+
+.main_details{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 50px;
+    width:98%;
+    height: fit-content;
+    background-color: white;
+    padding: 30px;
+    box-shadow: 5px 5px 25px -5px rgba(0,0,0,0.3);
+  
+}
+
+.bg_div{
+    background-color: white;
+    height: 150rem;
+   margin-bottom: -20rem;
+}
+
+.tour_overview,.tickets,.important_info,
+.Things_div,.addtional_info,.terms_condition,.covid_info,
+.cancel_policy,.refund_policy,.payment_policy{
+    display: flex;
+    flex-direction: column;
+    
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    width: 107rem;
+    height: fit-content;
+    border-radius: 15px;
+    padding: 20px;
+    margin-top: 10px;
+}
+
+.main_details Button{
+    border-radius: 5px;
+    width:100vw;
+    height:50px;
+    margin-top: 100px;
+    color:white;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #228c22;
+}
+
+.main_details Button:hover{
+    background-color: #025802;
+}
+
+.details_content img{
+    width:100%;
+    height:50rem;
+    border-radius: 15px;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
+}
+
+.tour_overview h2{
+    margin-bottom: -5rem;
+}
+
+.details_content h1{
+  
+    color:#228c22;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: 600;
+    font-size: 2.5rem;
+    text-transform: capitalize;
+  
+}
+.tour_ovr{
+    
+    margin-top: 10px;
+    color: #228c22;
+    font-weight: bold;
+}
+
+.tour_ovr2{
+    margin-top: 10px;
+    color: #228c22;
+    font-weight: bold;
+    margin: 30px 0 30px 0;
+}
+
+.co_ru{
+    display: flex;
+    
+}
+
+.overview_details ul li{
+    font-weight: 600;
+    line-height: 2rem;
+    font-size: 1.2rem;
+    margin: 0 0 0 50px;
+}
+.details_content{
+    
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    
+}
+
+.overview_details p{
+   margin-top: 100px;
+   font-weight: 600;
+   font-size: 1rem;
+}
+
+.main_about{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width:50%;
+    margin-top: 50px;
+}
+
+.main_about p{
+    margin-top:30px;
+    font-weight: 600;
+    font-size: 1.2rem;
+    letter-spacing: 3px;
+    line-height: 100px;
+}
+
+.main_about h2{
+    margin-top: 50px;
+    color:#228c22;
+    font-size: 2.5rem;
 
 }
- @media(max-width:750px){
+
+.main_about h1{
+    margin-top: 50px;
+    color:#228c22;
+    font-size: 2.5rem;
+    font-weight: bold;
+    letter-spacing: 8px;
+}
+
+.super_about{
+    display:flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.content_warp{
+   display: flex;
+   justify-content: center;
+   align-items: center;
+   width: 100%;
+   transform: translateY(5%);
+   margin-bottom: 5rem;
+  
+}
+ 
+.orders_content{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    padding-left: 70px;
+    margin: 50px;
+}
+
+
+.main_order{
+    display:flex;
+    justify-content:center ;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 15px;
+    box-shadow: 5px 5px 35px -5px rgba(0,0,0,0.3);
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    margin-top: 100px;
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.city_details{
+    display: flex;
+    margin-bottom: 20px;
+}
+
+.city_details h2{
+    margin-right: 93.9px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.number_people{
+    display: flex;
+    flex-direction: column;
+
+}
+
+.Adult_div,
+.children_div{
+    display: flex;
+    flex-direction: row;
+    margin-bottom: 20px;
+    
+}
+
+
+.children_div input{
+    margin-left: 90px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #228c22;
+    width: 140px;
+}
+
+.Adult_div input{
+    margin-left: 73.9px;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #228c22;
+    width: 140px;
+}
+
+.Adult_div h2{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.children_div h2{
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.amount_details{
+    display: flex;
+    margin-top: 30px;
+
+}
+
+.d_list a:hover{
+   background-color: #228c22;
+   color:white;
+}
+.amount_details h2{
+    margin-right: 80.9px;
+    font-weight: 600;
+    font-size: 1.8rem;
+}
+
+.btn_confirm{
+    display: flex;
+    justify-content: space-evenly;
+    
+    margin-top: 50px;
+    margin-bottom: 10px;
+    /* transform: translateX(-10%); */
+}
+
+.btn_confirm Button{
+    background-color: #228c22;
+    font-weight: 600;
+    color:white;
+    letter-spacing: 3px;
+    width: 150px;
+    padding: 10px;
+    transform: translateX(-20%);
+}
+
+.btn_confirm Button:hover{
+    background-color: #036803;
+
+}
+
+.empty_cart h1{
+    text-align: center;
+    color:#000000;
+}
+
+.myorder_main{
+    width:100vw;
+    height: 100vh;
+}
+
+.search_filter input{
+    margin-top: 100px;
+}
+
+.user_info,.mobile_info{
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+}
+
+
+
+.main_accpage{
+    display: flex; 
+    justify-content: center;
+    align-items: center;
+    transform: translateY(-10%);
+    margin-bottom: -9rem;
+}
+
+
+.accdet_wrap{
+    display: flex;
+    box-shadow: 5px 5px 35px -5px rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    height: fit-content;
+    padding: 30px;
+    
+}
+
+.search_filter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 2.5rem;
+}
+
+.search_filter_content input{
+    width: 25rem;
+    height: 3rem;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
+    
+    font-weight: 600;
+    padding: 30px;
+    outline: none;
+}
+
+.search_filter_content button{
+    padding:20px;
+    height: 3.8rem;
+    width: 5.5rem;
+    background-color: #228c22;
+    color:white;
+    font-weight: 500;
+    border: none;
+    border-radius: 20px;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
+    font-weight: 600;
+    transform: translateX(-55%);
+}
+
+.search_filter_content button:hover{
+    background-color: #025802;
+
+}
+
+.order_title h1{
+    color:#228c22;
+    font-weight: 600;
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.myorder_main{
+    margin-top: 12rem;
+}
+
+.img_box img{
+    height: 10rem;
+    width:10rem;
+    margin-right: 60px;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+}
+
+.myorder_main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: -15em;
+    margin-bottom: -30rem;
+}
+
+.trace_orders{
+    display: flex;
+    height: fit-content;
+    width: 55rem;
+    padding: 50px;
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
+    border-radius: 15px;
+   
+}
+
+.cancel_order Button{
+    transform: translateY(500%)translateX(50%);
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    
+}
+
+.cancel_order Button:hover{
+    background-color: rgb(180, 1, 1);
+    color: white;
+}
+
+.ticket_title h1{
+    margin-top: 12rem;
+    text-align: center;
+    color: #228c22;
+    font-weight: bold;
+}
+
+.myorder_det h2{
+  color: #228c22;
+  font-weight: 600;
+
+}
+
+.our_recommendation_main{
+    display: flex;
+    margin-top: 5rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_book_now{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top:10rem;
+   
+    
+}
+
+.wrap_cont{
+    box-shadow: 5px 5px 25px -5px rgba(0, 0, 0, 0.3);
+    width: fit-content;
+    height: fit-content;
+    padding: 50px;
+    
+}
+.main_book_now input,textarea,select{
+    font-weight: 600;
+}
+.title_first_Name{
+    display: flex;
+    flex-direction: row;
+   
+}
+
+.title_first_Name input{
+    margin-left: 100px;
+    height:50px;
+    width: 450px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #228c22;
+}
+
+.row_set select{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #228c22;
+}
+
+.row_set{
+    display: flex;
+    flex-direction: column;
+}
+.row_set1{
+    display: flex;
+    flex-direction: column;
+}
+
+.lastname_email,.phone_passport{
+    display: flex;
+   justify-content: start;
+   margin-left: -50px;
+
+}
+
+.lastname_email input,.phone_passport input{
+    margin-left:50px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #228c22;
+    height:50px;
+    width: 300px;
+}
+
+.row_set textarea{
+    width: 650px;
+    height: 100px;
+    border: 1px solid #228c22;
+    border-radius: 15px;
+    outline: none;
+    margin-top: 10px;
+    text-indent: 10px;
+    padding: 20px;
+}
+
+.book_btn{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+
+.book_btn Button{
+    background-color: #228c22;
+    color:white;
+    margin: 20px;
+}
+
+.book_btn Button:hover{
+    background-color: #037e03;
+}
+
+
+ @media(max-width:763px){
+     .wrap_cont h1{
+         font-size: 2rem;
+         margin-bottom: -1.5rem;
+     }
+    .title_first_Name,.lastname_email,.phone_passport{
+        display: flex;
+        flex-direction: column;
+    }
+    
+    
+    .row_set textarea{
+        width: 300px;
+    }
+    .row_set1{
+        margin-left:-6rem;
+    } 
+    .wrap_cont input{
+        width: 300px;
+    }
+
+     .wrap_cont{
+         width:90%;
+         padding: 30px;
+     }
+    .react-calendar{
+        transform: translateX(2%);
+    }
+    .heading_title{
+        font-size: 2rem;
+        margin-top: 2rem;
+    }
+
+   .btn_confirm{
+      transform: translateX(8%);
+
+   }
+     .orders_content{
+         display: flex;
+         flex-direction: column;
+         justify-content: center;
+         align-items: center;
+         padding-left: 1px;
+     }
+    .tour_overview,.tickets,.important_info,
+    .Things_div,.addtional_info,.terms_condition,.covid_info,
+    .cancel_policy,.refund_policy,.payment_policy{
+        width: 22rem;
+    }
+    .ticket_title h1{
+        transform: translateY(-10%);
+        margin-top: 10rem;
+    }
+    .myorder_main{
+        transform: translateY(30%);
+        margin-bottom: 2rem;
+    }
+    .cancel_order {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .cancel_order Button{
+
+        transform: translateY(5%);
+        margin-top: 2rem;
+    }
+    .img_box img{
+        width: 100%;
+    }
+    .trace_orders{
+        display: flex;
+        flex-direction: column;
+        width: 400px;
+        
+    }
+
+    .trace_orders h2{
+      margin-top:2rem;
+    }
+
+     .main_accpage{
+      margin-bottom: 6rem;
+     }
+    .tour_overview h2{
+        margin-bottom: 1rem;
+    }
+     .search_filter{
+         display: flex;
+         justify-content: center;
+         align-items: center;
+         transform: translateX(5%);
+     }
+
+    .search_filter_content input{
+        width:300px;
+        height: 50px;
+    }
      .image_text{
          font-size: 1.5rem;
          position:relative;
@@ -261,6 +1171,22 @@
          font-size: 2rem;
          font-weight: bold;
      }
+     .veena h1{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 1.5rem;
+        margin-bottom: 2.5rem;
+    }
+     .pit h1{
+        font-size: 2rem;
+        font-weight: bold;
+        margin-top: 50px;
+    }
+
+    .booking{
+        width: 350px;
+        height: fit-content;
+    }
 
      .cards_data{
          display:flex;
@@ -302,7 +1228,99 @@
 
 .main_footer{
     margin-top:12rem;
+    width: 100vw;
+}
+
+.main_details{
+    width:100vw;
+}
+
+.details_content img{
+    height:25rem;
+}
+
+.overview_details p{
+    font-weight: bold;
+    margin-top: 0;
+    padding:20px;
+}
+
+.main_details Button{
+    width:100vw;
+    height:5vh;
+    margin-top: 0;
+}
+
+.main_about{
+    width:100%;
+    padding:20px;
+}
+.main_about h1{
+    font-size: 2.2rem;
+}
+
+.main_about h2{
+    font-size: 1.5rem;
+    letter-spacing: 3px;
+}
+
+.main_about p{
+    line-height: 30px;
+    text-align: center;
+}
+
+.main_register1{
+    margin-bottom: 300px;
+    transform: translateY(20%);
+}
+
+/* .main_register{
+    transform: translateY(10%);
+    margin-bottom: 0px;
+} */
+
+.nav_bar{
+    height: fit-content;
+}
+
+
+
+
+.row_poster1{
     
+    display: flex;
+    flex-direction: row;
+    overflow-x: scroll;
+    width: 400px;
+    padding: 0px 50px 0px 0px;
+}
+
+
+
+
+.row{
+ display: flex;
+ flex-direction: column;
+ 
+ justify-content: center;
+ align-items: center;
+ 
+ 
+}
+
+.indian_tours{
+    width: fit-content;
+    padding: 20px;
+    
+}
+
+.overview_details ul li{
+    font-size: 1rem;
+}
+
+.co_ru{
+    display: flex;
+    flex-direction: column;
 }
 
  }

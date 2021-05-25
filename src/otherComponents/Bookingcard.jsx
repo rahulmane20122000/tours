@@ -5,7 +5,7 @@ const Bookingcard = (props) => {
         <>
             <div className="booking_card">
            <div className="icon_div">
-            <i class={props.icon}></i></div>
+            <i className={props.icon}></i></div>
             <h2 style={{"color":"white"}}>{props.Text}</h2>
             </div> 
         </>
