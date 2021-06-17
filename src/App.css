@@ -8,10 +8,8 @@
     
 }
 
-body {
-    font-size: 10px; /* this will make em cross-behave */
-    
-}
+
+
 
 .react-calendar {
     transform: translateX(-5%);
@@ -281,7 +279,7 @@ body {
 .pit h1{
     text-align: center;
     font-size: 4.5rem;
-    color:#546854;
+    color:#228c22;
     font-weight: 500;
     margin-top: 1.5rem;
 }
@@ -477,6 +475,12 @@ body {
 .cards2{
     padding:20px;
 }
+
+.cards2 p{
+    font-size: 1.1rem;
+    font-weight: 600;
+    margin-top: 30px;
+}
 .cards2 h2{
     font-weight: bold;
     color:#228C22;
@@ -549,7 +553,7 @@ body {
     flex-direction: column;
     
     box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
-    width: 107rem;
+    width: 100%;
     height: fit-content;
     border-radius: 15px;
     padding: 20px;
@@ -679,8 +683,9 @@ body {
    justify-content: center;
    align-items: center;
    width: 100%;
-   transform: translateY(5%);
+   margin-top:-5rem;
    margin-bottom: 5rem;
+   
   
 }
  
@@ -729,10 +734,15 @@ body {
     margin-bottom: 20px;
 }
 
-.city_details h2{
-    margin-right: 93.9px;
+.city_details h3{
+  margin-right: 90.9px;
     font-weight: 600;
-    font-size: 1.8rem;
+    font-size: 1.7rem;
+}
+
+.city_details h2{
+    font-size: 1.5rem;
+    text-align: justify;
 }
 
 .number_people{
@@ -967,9 +977,10 @@ body {
 
 .main_book_now{
     display: flex;
+    
     justify-content: center;
     align-items: center;
-    flex-direction: column;
+    flex-direction: row;
     margin-top:10rem;
    
     
@@ -1060,8 +1071,212 @@ body {
     background-color: #037e03;
 }
 
+.counter_btn{
+    display: flex;
+    margin-left: 20px;
+}
+.counter_btn1{
+    display: flex;
+    margin-left: 32px;
+}
+.counter_btn button{
+    margin-left: 20px; 
+}
+.counter_btn1 button{
+    margin-left: 20px; 
+}
 
+.counter_btn h3{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.counter_btn1 h3{
+    margin-left: 30px;
+    margin-top: 10px;
+}
+.counter_btn1 h3,.counter_btn h3{
+    border-bottom: 1px solid #228c22;
+}
+
+.payment_content{
+    width: fit-content;
+    height: fit-content;
+    padding: 20px;
+    box-shadow: 5px 5px 15px -5px rgba(0, 0, 0, 0.3);
+    margin-left: 20px;
+    transform: translateY(-17%);
+}
+
+.payment_img img{
+    width: 350px;
+    height: 200px;
+    margin:20px 10px 30px 10px;
+}
+
+.total_payble{
+    display: flex;
+    border-bottom: 1px solid #228c22;
+    padding:10px 0px 20px 0px;
+}
+
+.amount_payment{
+    margin-left: 200px;
+}
+
+.amount_det p{
+  font-weight: 600;
+  padding: 10px 0px 20px 0px;
+}
+
+.amount_det span{
+    margin-left: 195px;
+}
+
+.table_div{
+    margin-top:12rem;
+    font-weight: 600;
+    color:#228c22;
+    
+}
+
+.ticket_content_wrap{
+    display: flex;
+}
+
+.ticket_price h4{
+   
+    
+    font-weight: bold;
+    color:rgb(230, 25, 25);
+    
+}
+
+.ticket_price{
+    display: flex;
+    flex-direction: column;
+    margin-left: 65rem;
+    
+}
+
+.ticket_price label{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.ticket_title_icon{
+    display: flex;
+    
+}
+
+.ticket_title_icon i{
+    font-size: 1.5rem;
+    margin: 10px;
+    margin-left: 30px;
+    cursor: pointer;
+    margin-top: 30px;
+}
+
+.ticket_title_icon h2{
+    font-weight: 600;
+    margin-left: 50px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+.ticket_select_slot{
+    display: flex;
+    margin-top: 20px;
+}
+
+.slots{
+    display: flex;
+    flex-direction: column;
+    margin-left: 50px;
+   
+}
+
+.slots label{
+    font-weight: 600;
+    font-size: 1.2rem;
+}
+
+.slots select{
+   outline: none;
+    width: 100px;
+    height: 30px;
+}
+
+.ticket_adult_kid{
+margin-left: 52rem;
+}
+.ticket_adult_kid h6{
+    font-weight: 600;
+    margin-top: 20px;
+}
+
+.ticket_price{
+    margin-left: 35rem;
+}
  @media(max-width:763px){
+
+    
+     .ticket_adult_kid{
+         margin-left: 90px;
+     }
+    .ticket_title_icon h2{
+        font-size: 1.2rem;
+    }
+
+    .ticket_title_icon i{
+        margin: 5px;
+        font-size: 1.2rem;
+        transform: translateY(28%);
+        margin-left: 5px;
+    }
+
+    .ticket_price{
+        margin-left:10px;
+        transform: translateY(6%);
+    }
+    .ticket_price label,.ticket_price h4{
+        font-size: 1.2rem;
+    }
+    .city_details h3{
+        transform: translateX(-50%);
+         font-weight: 600;
+         font-size: 1.7rem;
+     }
+  .user_name{
+      display: flex;
+  }
+
+  .user_name i{
+      transform: translateY(30%);
+  }
+    .payment_content{
+        width: 400px;
+        margin: 0;
+    }
+     .main_book_now{
+         display: flex;
+         flex-direction: column-reverse;
+         margin-top: 13rem;
+     }
+     .btn_pop Button{
+         width:"300px";
+     }
+    .content_warp{
+        margin-top: -10rem;
+        
+    }
+     .main_order{
+         margin-top: 10rem;
+         width: 110%;
+         padding: 30px;
+     }
+     .order_title h1{
+         font-size: 1.5rem;
+     }
      .wrap_cont h1{
          font-size: 2rem;
          margin-bottom: -1.5rem;
@@ -1079,15 +1294,16 @@ body {
         margin-left:-6rem;
     } 
     .wrap_cont input{
-        width: 300px;
+        width: 350px;
     }
 
      .wrap_cont{
-         width:90%;
+         width:400px;
          padding: 30px;
      }
     .react-calendar{
         transform: translateX(2%);
+        
     }
     .heading_title{
         font-size: 2rem;
@@ -1108,7 +1324,7 @@ body {
     .tour_overview,.tickets,.important_info,
     .Things_div,.addtional_info,.terms_condition,.covid_info,
     .cancel_policy,.refund_policy,.payment_policy{
-        width: 22rem;
+        width: 24.5rem;
     }
     .ticket_title h1{
         transform: translateY(-10%);
@@ -1163,7 +1379,7 @@ body {
      .image_text{
          font-size: 1.5rem;
          position:relative;
-         top:-12.5rem;
+         top:-15.5rem;
          left:0.2rem;
      }
 
@@ -1180,7 +1396,7 @@ body {
      .pit h1{
         font-size: 2rem;
         font-weight: bold;
-        margin-top: 50px;
+        margin-top: 350px;
     }
 
     .booking{
@@ -1271,13 +1487,13 @@ body {
 
 .main_register1{
     margin-bottom: 300px;
-    transform: translateY(20%);
+    transform: translateY(40%);
 }
 
-/* .main_register{
-    transform: translateY(10%);
-    margin-bottom: 0px;
-} */
+.main_register{
+    transform: translateY(20%);
+    margin-bottom: 300px;
+}
 
 .nav_bar{
     height: fit-content;

@@ -1,4 +1,4 @@
-
+import {useEffect} from 'react';
 import './App.css';
 import {Switch,Route} from 'react-router-dom';
 import Navbars from './Components/Navbars';
@@ -13,12 +13,16 @@ import Confirm from './otherComponents/Confirmorder';
 import Myorders from './otherComponents/Myorders';
 import Myaccount from './otherComponents/Myaccount';
 import Booknow from './otherComponents/Booknow';
+import Paymentdetails from './otherComponents/Paymentdetails';
 
 
 
 function App(props) {
+
+
   return (
     <div className="App">
+   
     <Navbars/>
     <Switch>
      <Route exact path='/'>{Home}</Route>
@@ -31,6 +35,8 @@ function App(props) {
      <Route exact path='/mytours/:oname' >{Booknow}</Route>
      <Route exact path='/myaccount'>{Myaccount}</Route>
      <Route exact path='/mytickets/:tname'>{Myorders}</Route>
+     <Route exact path="/payment_details/:oo" component={Paymentdetails} />
+     <Route exact path="/mytours" component={Myorders}/>
     </Switch>
    
     </div>

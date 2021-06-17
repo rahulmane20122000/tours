@@ -11,7 +11,7 @@ const InternationalCard = () => {
          <div className="row_poster1"> 
           {International.map((item,i)=>{
               return(
-                  <Cards key={i} imgSrc={item.img} title={item.name} plan={item.plan} price={item.price} overview={item.overView}/>
+                  <Cards className="international_cards_mapping" id="international_cards_mapping" key={i} imgSrc={item.img} title={item.name} plan={item.plan} price={item.price} overview={item.overView}/>
               );
           })}
           </div>

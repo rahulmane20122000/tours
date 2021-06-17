@@ -14,6 +14,7 @@ const Home = () => {
         <ImageSlide/>
         <Textanimation/>
         <Bookingprocess/>
+        <CardsRender/>
         
         <Footer/>
         </>

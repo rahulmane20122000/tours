@@ -2,7 +2,7 @@ import React from "react";
 import Veena from "./VeenaWorld";
 import Cards from "./Cards";
 
-// import { Button } from '@material-ui/core';
+
 const VeenaCards = () => {
   return ( 
     <>
@@ -16,6 +16,8 @@ const VeenaCards = () => {
               return (
                 <>
                   <Cards
+                  className="veena_cards_mapping"
+                  id="veena_cards_mapping"
                   key={index}
                     imgSrc={item.img}
                     title={item.name}

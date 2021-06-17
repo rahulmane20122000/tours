@@ -1,14 +1,7 @@
-// import react from 'react';
+
 import Bookingcard from './Bookingcard';
 
-// const booking_heading={
-//     "textAlign":"center",
-//     "fontSize":"4.5rem",
-//     "color":"#228c22",
-//     "fontWeight":"500",
-//     "marginTop":"1.5rem",
 
-// }
 
 
 const Bookingprocess=()=>{
